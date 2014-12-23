@@ -15,38 +15,85 @@
 <!-- Navbar -->
 <div class="navbar">
   <div class="navbar_container vertical_center">
+    <!-- <div id="nav-underline"></div> -->
     <img src="penguin.png" class="navbar_image" />
     <a href="#home" class="navbar_item navbar_name"><span class="bold_text">pat</span>briggs</a>
     <span class="right_nav">
-      <a href="#home" class="navbar_item right_nav_item desktop_only">home</a>
-      <a href="#about" class="navbar_item right_nav_item desktop_only">about</a>
-      <a href="#experience" class="navbar_item right_nav_item desktop_only">experience</a>
-      <a href="#contact" class="navbar_item right_nav_item desktop_only">contact</a>
-      <span class="navbar_item right_nav_item mobile_only">
+      <a href="#home" class="navbar_item navbar_link right_nav_item desktop_only navbar_active" id="home-nav-link">home</a>
+      <a href="#about" id="about-nav-link" class="navbar_item navbar_link right_nav_item desktop_only">about</a>
+      <a href="#experience" class="navbar_item navbar_link right_nav_item desktop_only" id="experience-nav-link">experience</a>
+      <a href="#contact" class="navbar_item navbar_link right_nav_item desktop_only" id="contact-nav-link">contact</a>
+      <span class="navbar_item right_nav_item mobile_only navbar_menu_link">
         <span>menu</span>
-        <i class="fa fa-bars"></i>
-      </a>
+        <i class="fa fa-bars menu_icon"></i>
+      </span>
     </span>
   </div>
 </div>
 
-<!-- Main Content -->
-<div class="content">
-hi
-<br />
-<br />
-<br />
-<br />
-<br />
-<p>
-Lorem ipsum dolor sit amet, fugit utinam sadipscing ei vim, virtute admodum tacimates has no. Quo id iudico officiis, cum vidit alienum no, minimum explicari scriptorem te eum. Mei epicurei singulis ut. Inani vitae invenire nec ne, quot tritani ullamcorper ne mel. Propriae mediocrem dissentias id eum, no dolor scribentur qui. An impetus vulputate liberavisse vix, mea nostrud propriae probatus ne. Mentitum principes vituperata et cum, qui id audire prompta.
-</p>
-<br />
-<br />
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-hii2
+<div class="promo" id="home">
+  <div class="promo_main_text vertical_center">Hi, I'm Pat</div>
+  <div class="promo_sub_text vertical_center">I love making things, coding, and playing volleyball.</div>
 </div>
 
+<!-- Main Content -->
+<div class="content">
+
+  <div class="section_container about_me_container" id="about">
+    <div class="about_me_header">
+      <div class="section_header_text">about me</div>
+    </div>
+
+    <div class="about_me_background">
+      <div class="about_me_left">
+        <div class="about_me_headshot vertical_center"></div>
+      </div>
+
+      <div class="about_me_right">
+        <div class="about_me_description vertical_center">
+          <!-- <i class="fa fa-play about_me_description_triangle"></i> -->
+          <span class="about_me_description_triangle">&#9664</span>
+          <div class="about_me_description_text">
+            Hi there, I'm Pat, and I'm a junior studying Computer Science at Stanford University. I've been programming since I was 13 and have always loved technology. I'm especially passionate about startups and web development. When I'm not working, you can find me napping on the beach or playing Super Smash Bros.
+          </div>
+          <a href="#" class="view_resume_text">
+            <span class="view_resume_text_underline">View my resume</span>
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="about_me_description_mobile">
+      <div class="about_me_description_text_mobile">
+        Hi there, I'm Pat, and I'm a junior studying Computer Science at Stanford University. I've been programming since I was 13 and have always loved technology. I'm especially passionate about startups and web development. When I'm not working, you can find me napping on the beach or playing Super Smash Bros.
+      </div>
+
+      <a href="#" class="view_resume_text">
+        <span class="view_resume_text_underline">View my resume</span>
+        <i class="fa fa-angle-right"></i>
+      </a>
+    </div>
+
+  </div>
+
+<br /><br />
+<div class="section_container experience_container" id="experience">
+  experience
+</div>
+
+<div class="section_container contact_container" id="contact">
+  contact
+</div>
+
+</div>
+
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="interaction.js"></script>
+<script src="scroll-up-bar.min.js"></script>
 
   </body>
 </html>
