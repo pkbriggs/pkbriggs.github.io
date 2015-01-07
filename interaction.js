@@ -7,19 +7,19 @@ $(document).ready(function() {
     // not empty/#?
   }
 
-  $(window).scroll(function () {
-    var y = $(this).scrollTop();
+  // $(window).scroll(function () {
+  //   var y = $(this).scrollTop();
 
-    // add 'navbar_active' class to clicked navbar links
-    $('.navbar_link').each(function (event) {
-      if (y >= $($(this).attr('href')).offset().top - 60*2) { // 60 for navbar, 60*2 for a little breathing room
-        if (!$(this).hasClass("navbar_active")) {
-          $('.navbar_item').not(this).removeClass('navbar_active');
-          $(this).addClass('navbar_active');
-        }
-      }
-    });
-  });
+  //   // add 'navbar_active' class to clicked navbar links
+  //   $('.navbar_link').each(function (event) {
+  //     if (y >= $($(this).attr('href')).offset().top - 60*2) { // 60 for navbar, 60*2 for a little breathing room
+  //       if (!$(this).hasClass("navbar_active")) {
+  //         $('.navbar_item').not(this).removeClass('navbar_active');
+  //         $(this).addClass('navbar_active');
+  //       }
+  //     }
+  //   });
+  // });
 
 
   // smooth scrolling (with negative scroll for header)

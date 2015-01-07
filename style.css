@@ -107,14 +107,15 @@ body {
 
 
 .about_me_container {
-  border-radius: 8px;
-  /*height: 100%;*/
 }
 
 .about_me_header {
   position: relative;
-  background-color: white;
   box-shadow: 0px 2px 4px #76818B;
+}
+
+.section_header {
+  background-color: white;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -215,6 +216,8 @@ body {
 
 .section_container {
   box-shadow: 0px 0px 7px #737373;
+  margin-top: 32px;
+  border-radius: 8px;
 }
 
 
@@ -276,7 +279,6 @@ body {
 }
 
 .content {
-  margin-top: 32px;
   width: 90%;
   max-width: 960px;
   /*background-color: #ededed;*/
@@ -323,6 +325,100 @@ body {
 .about_me_description_text_mobile {
   display: none;
 }
+
+
+/* Experience */
+
+.experience_header {
+  box-shadow: 0px 1px 2px #D5D5D5;
+  position: relative; /* need this to show shadow */
+}
+
+.experience_content {
+  padding: 20px 30px;
+  background-color: white;
+}
+
+.experience_coinbase {
+  background-color: white;
+}
+
+.experience_description {
+  width: 40%;
+  display: inline-block;
+}
+
+.experience_description_header {
+  font-size: 1.6em;
+}
+
+.experience_description_date {
+  color: #BFBFBF;
+  font-size: 0.8em;
+  margin-top: -4px;
+}
+
+.experience_small_divider {
+  border: 1px solid #F4F4F4;
+  /*width: 40%;*/
+  margin-left: 0;
+}
+
+.experience_description_text {
+}
+
+.coinbase_image {
+  /*display: inline-block;
+  width: 59%;
+  height: 405px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("img/coinbase-imac.png");
+  background-image: -webkit-image-set(
+    url("img/coinbase-imac.png")    1x,
+    url("img/coinbase-imac@2x.png") 2x
+  );*/
+
+  display: inline-block;
+  width: 59%;
+  font-size: 0;
+  line-height: 0;
+  vertical-align: middle;
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url("img/coinbase-imac.png");
+  background-image: -webkit-image-set(
+    url("img/coinbase-imac.png")    1x,
+    url("img/coinbase-imac@2x.png") 2x
+  );
+}
+
+.coinbase_image_inner {
+  padding-top: 81%; /* height/width of image */
+  display: block;
+  height: 0;
+}
+
+
+.left_side {
+  width: 40%;
+  height: 100%;
+  background-color: blue;
+}
+
+.right_side {
+  width: 60%;
+  height: 100%;
+  background-color: red;
+}
+
+
+
+
+
+
 
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
