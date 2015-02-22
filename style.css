@@ -69,6 +69,12 @@ body {
   margin-top: 20px;
 }
 
+.footer {
+  color: #A0A0A0;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
 
 .navbar {
   position: fixed;
@@ -360,10 +366,7 @@ body {
   border-right: 3px solid rgba(51, 128, 208, 0.3);
 }
 
-.experience_coinbase {
-  background-color: white;
-  /* overflow: auto; */ /* hack for floats! */
-
+.experience_entry {
   display: -moz-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -373,20 +376,51 @@ body {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+
+  align-items: center; /* vertically center! <3 flexbox */
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+/* .experience_entry:first-of-type { */
+/*   margin-top: 0px; */
+/* } */
+
+/* .experience_entry:last-of-type { */
+/*   margin-bottom: 0px; */
+/* } */
+
+.experience_entry_divider {
+  border: 3px solid white;
+  box-shadow: 0px 1px 2px #D5D5D5;
+}
+
+.experience_coinbase {
+  background-color: white;
+  /* overflow: auto; */ /* hack for floats! */
 }
 
 .experience_description {
   width: 40%;
   margin: 0 auto;
-  /*display: inline-block;*/
-  /*float: left;*/
+}
 
+.experience_description_left {
   -moz-box-ordinal-group: 1;
   -webkit-box-ordinal-group: 1;
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
 }
+
+.experience_description_right {
+  -moz-box-ordinal-group: 2;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
 
 .experience_description_header {
   font-size: 1.6em;
@@ -405,32 +439,12 @@ body {
 }
 
 .experience_description_text {
+  margin-bottom: 40px; /* to account for button */
 }
 
-.coinbase_image {
+.experience_image {
   margin: 0 auto;
 
-  /*float: left;*/
-
-  -moz-box-ordinal-group: 2;
-  -webkit-box-ordinal-group: 2;
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-
-  /*display: inline-block;
-  width: 59%;
-  height: 405px;
-
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("img/coinbase-imac.png");
-  background-image: -webkit-image-set(
-    url("img/coinbase-imac.png")    1x,
-    url("img/coinbase-imac@2x.png") 2x
-  );*/
-
-  /*display: inline-block;*/
   width: 59%;
   font-size: 0;
   line-height: 0;
@@ -438,6 +452,15 @@ body {
   background-size: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+.coinbase_image {
+  -moz-box-ordinal-group: 2;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+
   background-image: url("img/coinbase-imac.png");
   background-image: -webkit-image-set(
     url("img/coinbase-imac.png")    1x,
@@ -451,11 +474,79 @@ body {
   height: 0;
 }
 
+.coinbase_button {
+  background: #3380D0;
+  text-shadow: 0px 1px 2px #26619E;
+}
+
+.trybtc_button {
+  background: #EE6E19;
+  text-shadow: 0px 1px 2px #B95513;
+}
+
+
+.tutera_button {
+  background: #32C252;
+  text-shadow: 0px 1px 2px #258C3C;
+}
+
+.experience_button {
+  box-shadow: 0px 1px 2px 0px rgba(112,112,112,0.50);
+  border-radius: 8px;
+  color: #FFFFFF;
+  padding: 20px 75px;
+  cursor: pointer;
+  text-align: center;
+  max-width: 120px;
+}
+
+.trybtc_image {
+  -moz-box-ordinal-group: 1;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+
+  background-image: url("img/trybtc-laptop.png");
+  background-image: -webkit-image-set(
+    url("img/trybtc-laptop.png")    1x,
+    url("img/trybtc-laptop@2x.png") 2x
+  );
+
+  width: 55%;
+}
+
+.trybtc_image_inner {
+  padding-top: 59%; /* height/width of image */
+  display: block;
+  height: 0;
+}
+
+.tutera_image {
+  -moz-box-ordinal-group: 2;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+
+  background-image: url("img/tutera-phone.png");
+  background-image: -webkit-image-set(
+    url("img/tutera-phone.png")    1x,
+    url("img/tutera-phone@2x.png") 2x
+  );
+}
+
+.tutera_image_inner {
+  padding-top: 114%; /* height/width of image */
+  display: block;
+  height: 0;
+}
+
 /* **************************** */
 /* Contact */
 
 .contact_container {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 .contact_method_container {
@@ -537,27 +628,56 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
-  .experience_description {
+  .experience_description_left, .experience_description_right {
     -moz-box-ordinal-group: 2;
     -webkit-box-ordinal-group: 2;
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
+  }
 
+  .experience_entry {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .experience_image {
+    margin-bottom: 20px;
+  }
+
+  .experience_entry:first-of-type {
+    margin-top: 0px;
+  }
+
+  .experience_entry:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  .experience_button {
+    margin: 0 auto; /* center the button */
+  }
+
+  .experience_description {
     width: 70%;
+  }
+
+  .experience_description_text {
+    margin-bottom: 30px;
   }
 
   .experience_description_header, .experience_description_date {
     text-align: center;
   }
 
-  .coinbase_image {
+  .coinbase_image, .tutera_image {
     -moz-box-ordinal-group: 1;
     -webkit-box-ordinal-group: 1;
     -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1;
+  }
 
+  .coinbase_image, .tutera_image, .trybtc_image {
     width: 80%;
   }
 
@@ -575,7 +695,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .coinbase_image {
+  .coinbase_image, .tutera_image, .trybtc_image {
     width: 100%;
   }
 
