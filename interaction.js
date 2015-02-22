@@ -36,4 +36,7 @@ $(document).ready(function() {
     }
   });
 
+  var currDate = new Date()
+  $("#footer-year").text(currDate.getFullYear())
+
 });

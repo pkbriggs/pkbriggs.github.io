@@ -69,8 +69,11 @@ body {
   margin-top: 20px;
 }
 
-.footer {
+.footer, #footer-year {
   color: #A0A0A0;
+}
+
+.footer {
   padding-left: 30px;
   margin-bottom: 30px;
 }
