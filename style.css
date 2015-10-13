@@ -277,7 +277,8 @@ a:hover {
 }
 
 .project_container {
-  margin-top: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   border-bottom: 1px solid #D1D1D1;
 }
 
