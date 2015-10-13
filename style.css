@@ -4,21 +4,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 html {
   font-size: 18px; /* 18px = 1rem */
 }
@@ -289,11 +274,6 @@ a:hover {
 .tutera_project_info_container {
   margin-top: 6%;
 }
-
-/*.project_image_container {
-  height: 100%;
-  width: 100%;
-}*/
 
 .notemap_computer_image {
   max-width: 500px;
