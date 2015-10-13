@@ -105,7 +105,8 @@ a:hover {
 .footer {
   padding-left: 30px;
   /*margin-bottom: 30px;*/
-  margin-bottom: 200px;
+  margin-bottom: 50px;
+  min-height: 5px;
 }
 
 
@@ -188,6 +189,18 @@ a:hover {
   color: #333;
 }
 
+.small_margin_top {
+  margin-top: 4%;
+}
+
+.huge_margin_top {
+  margin-top: 16%;
+}
+
+.large_margin_bottom {
+  margin-bottom: 8%;
+}
+
 .blue_hover_highlight:hover {
   /*color: #5f5f5f;*/
   color: #23527c;
@@ -268,7 +281,7 @@ a:hover {
   border-bottom: 1px solid #D1D1D1;
 }
 
-.project_container:last-of-type {
+.no_border_bottom {
   border-bottom: none;
 }
 
@@ -340,12 +353,13 @@ a:hover {
   -webkit-transform: translateY(-50%);
 }
 
-.footer {
-  min-height: 5px;
-}
-
 
 /************** CONTENT PAGES **************/
+
+.project_page .container {
+  padding-left: 60px;
+  padding-right: 60px;
+}
 
 .project_page_promo {
   background-image: url("img/trybtc_header@2x.jpg");
@@ -385,6 +399,43 @@ a:hover {
   margin-bottom: 25px;
 }
 
-.screenshot_caption {
+.trybtc_screenshot_2 {
+  max-width: 628px;
+  max-height: 645px;
+  padding-bottom: 102.7%; /* height/width */
+  background-image: url("img/trybtc_screenshot_2.jpg");
+  background-image: -webkit-image-set(
+    url("img/trybtc_screenshot_2.jpg")    1x,
+    url("img/trybtc_screenshot_2.jpg") 2x
+  );
+}
+
+.trybtc_screenshot_3 {
+  max-width: 545px;
+  max-height: 372px;
+  padding-bottom: 68.2%; /* height/width */
+  background-image: url("img/trybtc_screenshot_3.jpg");
+  background-image: -webkit-image-set(
+    url("img/trybtc_screenshot_3.jpg")    1x,
+    url("img/trybtc_screenshot_3.jpg") 2x
+  );
+
+  margin-bottom: 20px;
+}
+
+.trybtc_screenshot_4 {
+  max-width: 545px;
+    max-height: 372px;
+    padding-bottom: 68.2%; /* height/width */
+  background-image: url("img/trybtc_screenshot_4.jpg");
+  background-image: -webkit-image-set(
+    url("img/trybtc_screenshot_4.jpg")    1x,
+    url("img/trybtc_screenshot_4.jpg") 2x
+  );
+
+  margin-bottom: 20px;
+}
+
+.centered_text {
   text-align: center;
 }
