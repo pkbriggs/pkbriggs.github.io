@@ -282,24 +282,9 @@ a:hover {
 }*/
 
 .notemap_computer_image {
-  /* CSS hack to show background-image at perfect size. See: http://stackoverflow.com/a/13625843 */
-  height: 0;
-  padding-bottom: 100%;
-  height: 0;
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-repeat: no-repeat;
-  /*width: 250px;*/
-  /*height: 76px;*/
-  width: 100%;
-  /*height: 100%;*/
-
-  background-size: contain;
   max-width: 500px;
-  max-height: 708px;
-  /*height: 500px;*/
+  max-height: 421px;
+  padding-bottom: 84.2%;
   background-image: url("img/notemap-imac.png");
   background-image: -webkit-image-set(
     url("img/notemap-imac.png")    1x,
@@ -308,23 +293,9 @@ a:hover {
 }
 
 .tutera_phone_image {
-  /* CSS hack to show background-image at perfect size. See: http://stackoverflow.com/a/13625843 */
-  height: 0;
-  padding-bottom: 100%;
-  height: 0;
-
-  display: block;
-  margin-bottom: -1px; /* align bottom of phone with divider line */
-  margin-left: auto;
-  margin-right: auto;
-  background-repeat: no-repeat;
-  /*width: 250px;*/
-  /*height: 76px;*/
-  width: 100%;
   max-width: 500px;
   max-height: 569px;
-  background-size: contain;
-  /*height: 500px;*/
+  padding-bottom: 113.8%;
   background-image: url("img/tutera-phone.png");
   background-image: -webkit-image-set(
     url("img/tutera-phone.png")    1x,
@@ -333,31 +304,14 @@ a:hover {
 }
 
 .trybtc_laptop_image {
-  /* CSS hack to show background-image at perfect size. See: http://stackoverflow.com/a/13625843 */
-  height: 0;
-  padding-bottom: 100%;
-  height: 0;
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-repeat: no-repeat;
-  /*width: 250px;*/
-  /*height: 76px;*/
-  width: 100%;
-  background-size: contain;
   max-width: 500px;
   max-height: 294px;
-  /*height: 500px;*/
+  padding-bottom: 58.8%;
   background-image: url("img/trybtc-laptop.png");
   background-image: -webkit-image-set(
     url("img/trybtc-laptop.png")    1x,
     url("img/trybtc-laptop@2x.png") 2x
   );
-}
-
-.project_image:hover { /* prevent blue underline when hovering over project images */
-  border-bottom: 1px solid transparent;
 }
 
 
@@ -386,6 +340,9 @@ a:hover {
   -webkit-transform: translateY(-50%);
 }
 
+.footer {
+  min-height: 5px;
+}
 
 
 /************** CONTENT PAGES **************/
@@ -396,5 +353,38 @@ a:hover {
   background-size: cover;
   max-height: 625px;
   height: 100%;
+  text-align: center;
+}
+
+
+.full_responsive_image {
+  /* CSS hack to show background-image at perfect size. See: http://stackoverflow.com/a/13625843 */
+  height: 0;
+  /*padding-bottom: 100%;*/
+  /*padding-bottom: height/width*/
+  height: 0;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+}
+
+.trybtc_screenshot_1 {
+  max-width: 2224px;
+  max-height: 1310px;
+  padding-bottom: 58.9%; /* height/width */
+  background-image: url("img/trybtc_screenshot_1.jpg");
+  background-image: -webkit-image-set(
+    url("img/trybtc_screenshot_1.jpg")    1x,
+    url("img/trybtc_screenshot_1.jpg") 2x
+  );
+
+  margin-bottom: 25px;
+}
+
+.screenshot_caption {
   text-align: center;
 }
