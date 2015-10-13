@@ -64,6 +64,20 @@ body {
   background-color: #C4C4C4;
 }
 
+a {
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 120ms ease-in;
+}
+
+a:hover {
+  text-decoration: none !important;
+  border-bottom: 1px solid #337ab7;
+}
+
+.full_height {
+  height: 100%;
+}
+
 
 /* Misc */
 
@@ -78,7 +92,8 @@ body {
 
 .footer {
   padding-left: 30px;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
+  margin-bottom: 200px;
 }
 
 
@@ -154,7 +169,7 @@ body {
 
 .subsection_header_row {
   border-bottom: 1px solid #D3D3D3;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .subsection_header {
@@ -167,6 +182,7 @@ body {
   line-height: 2.5em;
   text-transform: uppercase;
   border-bottom: 3px solid #333;
+  font-size: 1.1em;
   font-weight: 400;
 }
 
@@ -177,6 +193,129 @@ body {
 .contact_method_text {
   margin-left: 10px;
 }
+
+.contact_method_link {
+  color: #333;
+  /*transition: all 120ms ease-in;
+  border-bottom: 1px solid transparent;*/
+}
+.contact_method_link:hover {
+  /*border-bottom: 1px solid #337ab7;*/
+  /*text-decoration: none;*/
+}
+
+
+/* Project Section Styling */
+
+.project_header {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #D1D1D1;
+  margin-bottom: 20px;
+}
+
+.project_name {
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+.project_timeframe {
+  margin-left: 5px;
+  color: #717171;
+}
+
+.project_learn_more {
+  float: right;
+  margin-top: 20px;
+}
+
+.project_description {
+
+}
+
+.project_container {
+  margin-top: 5%;
+}
+
+/*.project_image_container {
+  height: 100%;
+  width: 100%;
+}*/
+
+.notemap_computer_image {
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  /*width: 250px;*/
+  /*height: 76px;*/
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  max-width: 500px;
+  max-height: 708px;
+  /*height: 500px;*/
+  background-image: url("img/notemap-imac.png");
+  background-image: -webkit-image-set(
+    url("img/notemap-imac.png")    1x,
+    url("img/notemap-imac@2x.png") 2x
+  );
+}
+
+.tutera_phone_image {
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  /*width: 250px;*/
+  /*height: 76px;*/
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 569px;
+  background-size: contain;
+  /*height: 500px;*/
+  background-image: url("img/tutera-phone.png");
+  background-image: -webkit-image-set(
+    url("img/tutera-phone.png")    1x,
+    url("img/tutera-phone@2x.png") 2x
+  );
+}
+
+.trybtc_laptop_image {
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  /*width: 250px;*/
+  /*height: 76px;*/
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  max-width: 500px;
+  max-height: 294px;
+  /*height: 500px;*/
+  background-image: url("img/trybtc-laptop.png");
+  background-image: -webkit-image-set(
+    url("img/trybtc-laptop.png")    1x,
+    url("img/trybtc-laptop@2x.png") 2x
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .about_me_container {
