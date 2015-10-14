@@ -78,9 +78,9 @@ a:hover {
 
 /* Misc */
 
-.small_margin_top {
+/*.small_margin_top {
   margin-top: 20px;
-}
+}*/
 
 .footer, #footer-year {
   color: #A0A0A0;
@@ -262,8 +262,8 @@ a:hover {
 }
 
 .project_container {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 1%;
   border-bottom: 1px solid #D1D1D1;
 }
 
