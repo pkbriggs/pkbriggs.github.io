@@ -377,6 +377,11 @@ a:hover {
   padding-right: 40px;
 }
 
+.long_row_fix {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 /************** CONTENT PAGES **************/
 
 .project_page .container {
@@ -385,15 +390,43 @@ a:hover {
 }
 
 .project_page_promo {
-  background-image: url("img/trybtc_header@2x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 425px;
   height: 100%;
+  max-height: 425px;
+}
+
+.trybtc_promo {
+  background-image: url("img/trybtc_header@2x.jpg");
+}
+
+.notemap_promo {
+  background-image: url("img/notemap_header@2x.jpg");
+}
+
+.tutera_promo {
+  background-image: url("img/tutera_header@2x.jpg");
 }
 
 .highlights_container {
   text-align: center;
+}
+
+.highlights_outer_container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+}
+
+.promo_name_trybtc {
+  text-shadow: 0px 1px 2px #434A41;
+}
+
+.promo_name_notemap {
+  text-shadow: 0px 1px 2px #613C27;
+}
+
+.promo_name_tutera {
+  text-shadow: 0px 1px 1px #131709;
 }
 
 .project_promo_name {
@@ -401,12 +434,22 @@ a:hover {
   color: white;
   font-weight: 400;
   font-size: 2.5em;
-  text-shadow: 0px 1px 2px #434A41;
+}
+
+.promo_subtext_trybtc {
+  text-shadow: 0px 1px 2px #494D48;
+}
+
+.promo_subtext_notemap {
+  text-shadow: 0px 1px 2px #3F403C;
+}
+
+.promo_subtext_tutera {
+  text-shadow: 0px 1px 2px #232B0F;
 }
 
 .project_promo_sub_text {
   color: white;
-  text-shadow: 0px 1px 2px #494D48;
   font-size: 1.2em;
   margin-top: 10px;
   padding: 0px 30px;
@@ -499,11 +542,22 @@ a:hover {
   text-align: center;
 }
 
+.project_highlight_number_notemap, .project_highlight_text_notemap {
+  text-shadow: 0px 1px 1px #656969;
+}
+
+.project_highlight_number_trybtc, .project_highlight_text_trybtc {
+  text-shadow: 0px 1px 2px #513416;
+}
+
+.project_highlight_number_tutera, .project_highlight_text_tutera {
+  text-shadow: 0px 1px 1px #5D632F;
+}
+
 .project_highlight_number {
   font-size: 2.4em;
   font-weight: 400;
   color: white;
-  text-shadow: 0px 1px 2px #513416;
 }
 
 .project_highlight_text {
@@ -512,5 +566,4 @@ a:hover {
   margin-right: auto;
   text-transform: uppercase;
   color: white;
-  text-shadow: 0px 1px 2px #513416;
 }
