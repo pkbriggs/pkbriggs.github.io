@@ -120,7 +120,7 @@ a:hover {
 }
 
 .promo {
-  background-image: url("header_background@2x.jpg");
+  background-image: url("../img/header_background@2x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 450px;
@@ -284,14 +284,14 @@ a:hover {
   max-width: 500px;
   max-height: 421px;
   padding-bottom: 84.2%;
-  background-image: url("img/notemap-imac.png");
+  background-image: url("../img/notemap-imac.png");
   background-image: -webkit-image-set(
-    url("img/notemap-imac.png")    1x,
-    url("img/notemap-imac@2x.png") 2x
+    url("../img/notemap-imac.png")    1x,
+    url("../img/notemap-imac@2x.png") 2x
   );
   background-image: image-set(
-    url("img/notemap-imac.png")    1x,
-    url("img/notemap-imac@2x.png") 2x
+    url("../img/notemap-imac.png")    1x,
+    url("../img/notemap-imac@2x.png") 2x
   );
 }
 
@@ -299,14 +299,14 @@ a:hover {
   max-width: 500px;
   max-height: 569px;
   padding-bottom: 113.8%;
-  background-image: url("img/tutera-phone.png");
+  background-image: url("../img/tutera-phone.png");
   background-image: -webkit-image-set(
-    url("img/tutera-phone.png")    1x,
-    url("img/tutera-phone@2x.png") 2x
+    url("../img/tutera-phone.png")    1x,
+    url("../img/tutera-phone@2x.png") 2x
   );
   background-image: image-set(
-    url("img/tutera-phone.png")    1x,
-    url("img/tutera-phone@2x.png") 2x
+    url("../img/tutera-phone.png")    1x,
+    url("../img/tutera-phone@2x.png") 2x
   );
 }
 
@@ -315,14 +315,14 @@ a:hover {
   max-width: 500px;
   max-height: 294px;
   padding-bottom: 58.8%;
-  background-image: url("img/trybtc-laptop.png");
+  background-image: url("../img/trybtc-laptop.png");
   background-image: -webkit-image-set(
-    url("img/trybtc-laptop.png")    1x,
-    url("img/trybtc-laptop@2x.png") 2x
+    url("../img/trybtc-laptop.png")    1x,
+    url("../img/trybtc-laptop@2x.png") 2x
   );
   background-image: image-set(
-    url("img/trybtc-laptop.png")    1x,
-    url("img/trybtc-laptop@2x.png") 2x
+    url("../img/trybtc-laptop.png")    1x,
+    url("../img/trybtc-laptop@2x.png") 2x
   );
 }
 
@@ -339,14 +339,14 @@ a:hover {
 
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("headshot.jpg");
+  background-image: url("../img/headshot.jpg");
   background-image: -webkit-image-set(
-    url("headshot.jpg")    1x,
-    url("headshot@2x.jpg") 2x
+    url("../img/headshot.jpg")    1x,
+    url("../img/headshot@2x.jpg") 2x
   );
   background-image: image-set(
-    url("headshot.jpg")    1x,
-    url("headshot@2x.jpg") 2x
+    url("../img/headshot.jpg")    1x,
+    url("../img/headshot@2x.jpg") 2x
   );
 }
 
@@ -397,15 +397,15 @@ a:hover {
 }
 
 .trybtc_promo {
-  background-image: url("img/trybtc_header@2x.jpg");
+  background-image: url("../img/trybtc_header@2x.jpg");
 }
 
 .notemap_promo {
-  background-image: url("img/notemap_header@2x.jpg");
+  background-image: url("../img/notemap_header@2x.jpg");
 }
 
 .tutera_promo {
-  background-image: url("img/tutera_header@2x.jpg");
+  background-image: url("../img/tutera_header@2x.jpg");
 }
 
 .highlights_container {
@@ -480,14 +480,14 @@ a:hover {
   max-width: 2224px;
   max-height: 1310px;
   padding-bottom: 58.9%; /* height/width */
-  background-image: url("img/trybtc_screenshot_1.jpg");
+  background-image: url("../img/trybtc_screenshot_1.jpg");
   background-image: -webkit-image-set(
-    url("img/trybtc_screenshot_1.jpg")    1x,
-    url("img/trybtc_screenshot_1.jpg") 2x
+    url("../img/trybtc_screenshot_1.jpg")    1x,
+    url("../img/trybtc_screenshot_1.jpg") 2x
   );
   background-image: image-set(
-    url("img/trybtc_screenshot_1.jpg")    1x,
-    url("img/trybtc_screenshot_1.jpg") 2x
+    url("../img/trybtc_screenshot_1.jpg")    1x,
+    url("../img/trybtc_screenshot_1.jpg") 2x
   );
 
   margin-bottom: 25px;
@@ -497,10 +497,10 @@ a:hover {
   max-width: 628px;
   max-height: 645px;
   padding-bottom: 102.7%; /* height/width */
-  background-image: url("img/trybtc_screenshot_2.jpg");
+  background-image: url("../img/trybtc_screenshot_2.jpg");
   background-image: -webkit-image-set(
-    url("img/trybtc_screenshot_2.jpg")    1x,
-    url("img/trybtc_screenshot_2.jpg") 2x
+    url("../img/trybtc_screenshot_2.jpg")    1x,
+    url("../img/trybtc_screenshot_2.jpg") 2x
   );
 }
 
@@ -508,14 +508,14 @@ a:hover {
   max-width: 545px;
   max-height: 372px;
   padding-bottom: 68.2%; /* height/width */
-  background-image: url("img/trybtc_screenshot_3.jpg");
+  background-image: url("../img/trybtc_screenshot_3.jpg");
   background-image: -webkit-image-set(
-    url("img/trybtc_screenshot_3.jpg")    1x,
-    url("img/trybtc_screenshot_3.jpg") 2x
+    url("../img/trybtc_screenshot_3.jpg")    1x,
+    url("../img/trybtc_screenshot_3.jpg") 2x
   );
   background-image: image-set(
-    url("img/trybtc_screenshot_3.jpg")    1x,
-    url("img/trybtc_screenshot_3.jpg") 2x
+    url("../img/trybtc_screenshot_3.jpg")    1x,
+    url("../img/trybtc_screenshot_3.jpg") 2x
   );
 
   margin-bottom: 20px;
@@ -525,14 +525,14 @@ a:hover {
   max-width: 545px;
     max-height: 372px;
     padding-bottom: 68.2%; /* height/width */
-  background-image: url("img/trybtc_screenshot_4.jpg");
+  background-image: url("../img/trybtc_screenshot_4.jpg");
   background-image: -webkit-image-set(
-    url("img/trybtc_screenshot_4.jpg")    1x,
-    url("img/trybtc_screenshot_4.jpg") 2x
+    url("../img/trybtc_screenshot_4.jpg")    1x,
+    url("../img/trybtc_screenshot_4.jpg") 2x
   );
   background-image: image-set(
-    url("img/trybtc_screenshot_4.jpg")    1x,
-    url("img/trybtc_screenshot_4.jpg") 2x
+    url("../img/trybtc_screenshot_4.jpg")    1x,
+    url("../img/trybtc_screenshot_4.jpg") 2x
   );
 
   margin-bottom: 20px;
