@@ -178,6 +178,10 @@ a:hover {
   margin-top: 4%;
 }
 
+.tiny_margin_top {
+  margin-top: 2%;
+}
+
 .huge_margin_top {
   margin-top: 16%;
 }
@@ -326,6 +330,21 @@ a:hover {
     url("headshot.jpg")    1x,
     url("headshot@2x.jpg") 2x
   );
+}
+
+.project_technologies {
+  margin-top: 18%;
+}
+
+.project_technology {
+  margin-right: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border: 1px solid #C3C3C3;
+  border-radius: 8px;
+  padding: 6px 20px;
+  font-size: 0.75em;
+  width: 140px;
 }
 
 .vertical_center {
