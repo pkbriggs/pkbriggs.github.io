@@ -120,7 +120,7 @@ a:hover {
 }
 
 .promo {
-  background-image: url("../img/header_background@2x.jpg");
+  background-image: url("../img/header_background1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 450px;
@@ -168,6 +168,19 @@ a:hover {
 
 .promo_social_icon:hover {
   color: #C2C2C2;
+}
+
+.promo_image_credit {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.7em;
+  margin-left: 0px;
+  margin-top: -30px;
+  margin-right: 12px;
+  float: right;
+  text-decoration: none;
+}
+.promo_image_credit:hover {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .black_text {
