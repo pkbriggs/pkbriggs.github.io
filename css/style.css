@@ -538,6 +538,74 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.trybtc_screenshot_5 {
+  max-width: 2196px;
+  max-height: 1420px;
+  padding-bottom: 64.6%; /* height/width */
+  background-image: url("../img/trybtc_screenshot_5.jpg");
+  background-image: -webkit-image-set(
+    url("../img/trybtc_screenshot_5.jpg")    1x,
+    url("../img/trybtc_screenshot_5.jpg") 2x
+  );
+  background-image: image-set(
+    url("../img/trybtc_screenshot_5.jpg")    1x,
+    url("../img/trybtc_screenshot_5.jpg") 2x
+  );
+
+  margin-bottom: 25px;
+}
+
+.notemap_screenshot_1 {
+  max-width: 1000px;
+  max-height: 803px;
+  padding-bottom: 80.3%; /* height/width */
+  background-image: url("../img/notemap_screenshot_1.jpg");
+  background-image: -webkit-image-set(
+    url("../img/notemap_screenshot_1.jpg")    1x,
+    url("../img/notemap_screenshot_1.jpg") 2x
+  );
+  background-image: image-set(
+    url("../img/notemap_screenshot_1.jpg")    1x,
+    url("../img/notemap_screenshot_1.jpg") 2x
+  );
+
+  margin-bottom: 25px;
+}
+
+.notemap_screenshot_2 {
+  max-width: 1000px;
+  max-height: 803px;
+  padding-bottom: 80.3%; /* height/width */
+  background-image: url("../img/notemap_screenshot_2.jpg");
+  background-image: -webkit-image-set(
+    url("../img/notemap_screenshot_2.jpg")    1x,
+    url("../img/notemap_screenshot_2.jpg") 2x
+  );
+  background-image: image-set(
+    url("../img/notemap_screenshot_2.jpg")    1x,
+    url("../img/notemap_screenshot_2.jpg") 2x
+  );
+
+  margin-bottom: 25px;
+}
+
+.notemap_screenshot_3 {
+  max-width: 1442px;
+  max-height: 1032px;
+  padding-bottom: 71.5%; /* height/width */
+  background-image: url("../img/notemap_screenshot_3.jpg");
+  background-image: -webkit-image-set(
+    url("../img/notemap_screenshot_3.jpg")    1x,
+    url("../img/notemap_screenshot_3.jpg") 2x
+  );
+  background-image: image-set(
+    url("../img/notemap_screenshot_3.jpg")    1x,
+    url("../img/notemap_screenshot_3.jpg") 2x
+  );
+
+  margin-bottom: 25px;
+}
+
 .centered_text {
   text-align: center;
 }
