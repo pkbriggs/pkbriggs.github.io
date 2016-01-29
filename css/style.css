@@ -195,6 +195,10 @@ a:hover {
   margin-top: 2%;
 }
 
+.large_margin_top {
+  margin-top: 13%;
+}
+
 .huge_margin_top {
   margin-top: 16%;
 }
@@ -619,6 +623,54 @@ a:hover {
   );
 
   margin-bottom: 25px;
+}
+
+.notemap_screenshot_4 {
+  max-width: 628px;
+  max-height: 450px;
+  padding-bottom: 71.6%; /* height/width */
+  background-image: url("../img/notemap_screenshot_4.jpg");
+  background-image: -webkit-image-set(
+    url("../img/notemap_screenshot_4.jpg")    1x,
+    url("../img/notemap_screenshot_4.jpg") 2x
+  );
+  border: 1px solid #c4c4c4;
+}
+
+.notemap_screenshot_5 {
+  max-width: 545px;
+  max-height: 386px;
+  padding-bottom: 70.8%; /* height/width */
+  background-image: url("../img/notemap_screenshot_5.jpg");
+  background-image: -webkit-image-set(
+    url("../img/notemap_screenshot_5.jpg")    1x,
+    url("../img/notemap_screenshot_5@2x.jpg") 2x
+  );
+  background-image: image-set(
+    url("../img/notemap_screenshot_5.jpg")    1x,
+    url("../img/notemap_screenshot_5@2x.jpg") 2x
+  );
+
+  margin-bottom: 20px;
+  border: 1px solid #c4c4c4;
+}
+
+.notemap_screenshot_6 {
+  max-width: 545px;
+    max-height: 386px;
+    padding-bottom: 70.8%; /* height/width */
+  background-image: url("../img/notemap_screenshot_6.jpg");
+  background-image: -webkit-image-set(
+    url("../img/notemap_screenshot_6.jpg")    1x,
+    url("../img/notemap_screenshot_6@2x.jpg") 2x
+  );
+  background-image: image-set(
+    url("../img/notemap_screenshot_6.jpg")    1x,
+    url("../img/notemap_screenshot_6@2x.jpg") 2x
+  );
+
+  margin-bottom: 20px;
+  border: 1px solid #c4c4c4;
 }
 
 .centered_text {
