@@ -1,0 +1,11 @@
+{
+  "name": "Boilerplate",
+  "description": "Boilerplate code for static sites using gulp.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/pkbriggs",
+  "repository": "pkbriggs/static-boilerplate-gulp",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-webserver": "^0.9.1"
+  }
+}
