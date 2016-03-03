@@ -8,6 +8,8 @@ var pngquant = require('imagemin-pngquant'); // $ npm i -D imagemin-pngquant
 var autoprefixer = require('gulp-autoprefixer');
 var cache = require('gulp-cache');
 var browserSync = require('browser-sync').create();
+var notify = require("gulp-notify");
+var plumber = require('gulp-plumber');
 
 // both used to serve static files as well as automatically reload browser on changes
 gulp.task('browser-sync', function() {
@@ -23,6 +25,7 @@ gulp.task('browser-sync', function() {
 // compile sass to css
 gulp.task('sass', function () {
   return gulp.src('./css/style.scss')
+    .pipe(plumber({errorHandler: notify.onError("Sass error: <%= error.message %>")}))
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({ // make sure we add vendor prefixes!
       browsers: ['last 2 versions']
@@ -34,6 +37,7 @@ gulp.task('sass', function () {
 // compile all of our jade templates to html
 gulp.task('jade', function() {
   return gulp.src('./views/**/*.jade')
+    .pipe(plumber({errorHandler: notify.onError("Jade error: <%= error.message %>")}))
     .pipe(jade())
     .pipe(gulp.dest('./dist'))
     .pipe(browserSync.stream());
@@ -42,6 +46,7 @@ gulp.task('jade', function() {
 // compile all our coffeescript files to js
 gulp.task('coffee', function() {
   gulp.src('./coffee/*.coffee')
+    .pipe(plumber({errorHandler: notify.onError("CoffeeScript error: <%= error.message %>")}))
     .pipe(coffee({bare: true}))
     .pipe(gulp.dest('./dist'))
     .pipe(browserSync.stream());
@@ -50,10 +55,10 @@ gulp.task('coffee', function() {
 // simply copy files in our lib folder to our output folder
 gulp.task('copy-lib', function() {
   gulp.src('./lib/js/*.js')
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./dist'))
     .pipe(browserSync.stream());
   gulp.src('./lib/css/*.css')
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./dist'))
     .pipe(browserSync.stream());
 });
 
