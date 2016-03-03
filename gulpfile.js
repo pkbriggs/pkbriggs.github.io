@@ -10,6 +10,9 @@ var cache = require('gulp-cache');
 var browserSync = require('browser-sync').create();
 var notify = require("gulp-notify");
 var plumber = require('gulp-plumber');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+
 
 // both used to serve static files as well as automatically reload browser on changes
 gulp.task('browser-sync', function() {
@@ -24,12 +27,13 @@ gulp.task('browser-sync', function() {
 
 // compile sass to css
 gulp.task('sass', function () {
-  return gulp.src('./css/style.scss')
+  return gulp.src('./css/*.scss')
     .pipe(plumber({errorHandler: notify.onError("Sass error: <%= error.message %>")}))
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({ // make sure we add vendor prefixes!
       browsers: ['last 2 versions']
     }))
+    .pipe(concat('main.css'))
     .pipe(gulp.dest('./dist'))
     .pipe(browserSync.stream());
 });
@@ -48,6 +52,8 @@ gulp.task('coffee', function() {
   gulp.src('./coffee/*.coffee')
     .pipe(plumber({errorHandler: notify.onError("CoffeeScript error: <%= error.message %>")}))
     .pipe(coffee({bare: true}))
+    .pipe(concat("main.js"))
+    .pipe(uglify())
     .pipe(gulp.dest('./dist'))
     .pipe(browserSync.stream());
 });
@@ -77,8 +83,8 @@ gulp.task('imagemin', function() {
 
 // watch our files for changes
 gulp.task('watch', function () {
-  gulp.watch('./css/*.scss', ['sass']);
   gulp.watch('./views/**/*.jade', ['jade']);
+  gulp.watch('./css/*.scss', ['sass']);
   gulp.watch('./img/*', ['imagemin']);
   gulp.watch('./coffee/*', ['coffee']);
 });
@@ -90,7 +96,7 @@ gulp.task('deploy', ['build'], function() {
 });
 
 // group together all the relevant 'build' tasks for our convenience
-gulp.task('build', ['sass', 'jade', 'imagemin', 'coffee', 'copy-lib']);
+gulp.task('build', ['jade', 'sass', 'imagemin', 'coffee', 'copy-lib']);
 
 // by default, build everything, start the webserver, and watch our files for changes
 gulp.task('default', ['build', 'browser-sync', 'watch']);
