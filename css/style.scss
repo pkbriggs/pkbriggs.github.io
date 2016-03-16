@@ -523,30 +523,6 @@ a:hover {
   background-size: contain;
 }
 
-.trybtc_screenshot_2_text {
-  margin-top: 16%;
-}
-
-.notemap_screenshot_4_text {
-  margin-top: 13%;
-}
-
-.tutera_screenshot_1_text {
-  margin-top: 11.5%;
-}
-
-.tutera_screenshot_2_text {
-  margin-top: 8.5%;
-}
-
-.tutera_screenshot_4_text {
-  margin-top: 20%;
-}
-
-.tutera_screenshot_5_text {
-  margin-top: 28%;
-}
-
 .trybtc_screenshot_1 {
   max-width: 2224px;
   max-height: 1310px;
@@ -807,4 +783,82 @@ a:hover {
   margin-right: auto;
   text-transform: uppercase;
   color: white;
+}
+
+// customize the overlay color for the image overlay plugin we use
+.fluidbox__overlay {
+  background-color: rgba(33, 33, 33, 0.7) !important;
+}
+
+// Responsive image technique - make the parent a flexbox, make the image have 100% width
+// source: http://stackoverflow.com/a/30808550
+.focusable_image_container {
+  display: flex;
+}
+
+.focusable_image {
+  width: 100%;
+}
+
+.image_and_label_container {
+  display: flex;
+}
+
+.image_and_label_container.left_half, .image_and_label_container.right_half {
+  .focusable_image_container {
+    flex: 1;
+  }
+
+  .image_label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.image_and_label_container.left_half {
+  .focusable_image_container {
+    padding-right: 40px;
+  }
+}
+
+.image_and_label_container.right_half {
+  .image_label {
+    padding-right: 40px;
+  }
+}
+
+
+.image_and_label_container.full_width {
+  flex-direction: column;
+
+  .image_label {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    span {
+      width: 80%;
+      text-align: center;
+    }
+  }
+}
+
+.image_and_label_container.side_by_side {
+  flex-direction: column;
+  flex: 1;
+
+  .image_label {
+    span {
+      display: flex;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+}
+
+.image_and_label_container.side_by_side_left {
+  padding-right: 40px;
 }
