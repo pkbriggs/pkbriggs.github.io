@@ -18,7 +18,10 @@ var uglify = require('gulp-uglify');
 gulp.task('browser-sync', function() {
   browserSync.init({
     server: {
-      baseDir: "./dist"
+      baseDir: "./dist",
+      serveStaticOptions: { // serves files without .html extension - thanks https://github.com/BrowserSync/browser-sync/issues/197#issuecomment-169704723
+        extensions: ['html']
+      }
     },
     notify: false // do not show a notification every time an update is done
     // open: false // can be set so it does not automatically open browser
