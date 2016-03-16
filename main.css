@@ -433,24 +433,6 @@ a:hover {
   width: 100%;
   background-size: contain; }
 
-.trybtc_screenshot_2_text {
-  margin-top: 16%; }
-
-.notemap_screenshot_4_text {
-  margin-top: 13%; }
-
-.tutera_screenshot_1_text {
-  margin-top: 11.5%; }
-
-.tutera_screenshot_2_text {
-  margin-top: 8.5%; }
-
-.tutera_screenshot_4_text {
-  margin-top: 20%; }
-
-.tutera_screenshot_5_text {
-  margin-top: 28%; }
-
 .trybtc_screenshot_1 {
   max-width: 2224px;
   max-height: 1310px;
@@ -621,3 +603,76 @@ a:hover {
   margin-right: auto;
   text-transform: uppercase;
   color: white; }
+
+.fluidbox__overlay {
+  background-color: rgba(33, 33, 33, 0.7) !important; }
+
+.focusable_image_container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.focusable_image {
+  width: 100%; }
+
+.image_and_label_container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.image_and_label_container.left_half .focusable_image_container, .image_and_label_container.right_half .focusable_image_container {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+.image_and_label_container.left_half .image_label, .image_and_label_container.right_half .image_label {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.image_and_label_container.left_half .focusable_image_container {
+  padding-right: 40px; }
+
+.image_and_label_container.right_half .image_label {
+  padding-right: 40px; }
+
+.image_and_label_container.full_width {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .image_and_label_container.full_width .image_label {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px; }
+    .image_and_label_container.full_width .image_label span {
+      width: 80%;
+      text-align: center; }
+
+.image_and_label_container.side_by_side {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+  .image_and_label_container.side_by_side .image_label span {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+
+.image_and_label_container.side_by_side_left {
+  padding-right: 40px; }
