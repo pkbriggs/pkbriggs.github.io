@@ -92,7 +92,9 @@ gulp.task('watch', function () {
 // deploy to github pages automatically
 gulp.task('deploy', ['build'], function() {
   return gulp.src('./dist/**/*')
-    .pipe(ghPages());
+    .pipe(ghPages({
+      branch: "master" // deploy branch needs to be master, since this is a Github user site, not a project site
+    }));
 });
 
 // group together all the relevant 'build' tasks for our convenience
