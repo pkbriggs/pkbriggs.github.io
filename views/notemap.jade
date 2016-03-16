@@ -1,0 +1,27 @@
+extends layout
+include project_page_mixins
+
+block title
+  title NoteMap | Pat Briggs
+
+block content
+  .project_page.notemap_page
+    +project_promo("NoteMap", "a programmer's favorite notebook",
+      "13", "In-depth user tests",
+      "126", "Languages supported",
+      "1", "Project fair award")
+
+    +project_info("NoteMap is a website that helps you take code-related notes. It allows you to take down snippets of code as well as regular notes and link them together, so you don't have to forget what that one confusing line does ever again. It was a class project for the senior project course at Stanford.", "NoteMap was a team effort among two friends and myself. One team member focused primarily on the design and some of the front-end. Another focused on most of the Javascript for the note and code editors. I focused mostly on the back-end and on various pieces on the front-end. In addition, we all worked together to perform needfinding, perform user interviews, create sketches, and conduct user tests.")
+
+    +project_images("The Process")
+      +side_by_side_project_images("notemap_screenshot_1", "We began the project by first interviewing as many students and professors we could find. We wrote down all of our observations and synthesized them into needs that could be addressed.", "notemap_screenshot_2", "One of our first, rough sketches, making an attempt to bring notes and code together and to organize them efficiently.")
+
+      +full_width_project_image("notemap_screenshot_3")(label_class="")
+        span This is a medium-fidelity mockup we created after combining some of our favorite sketches. We received great feedback on it regarding color choice, emotion, and usability.
+
+      +left_half_project_image("notemap_screenshot_4")(label_class="notemap_screenshot_4_text")
+        span After making revisions to our design, we completed an initial prototype and began user testing. Boy, there were a lot of bugs.
+
+      +side_by_side_project_images("notemap_screenshot_5", "A revision on our design, incorporating a great deal of feedback and a first attempt at showing one of our key features - linking.", "notemap_screenshot_6", "After countless revisions and user tests, we have NoteMap as it is today.")
+
+    .footer

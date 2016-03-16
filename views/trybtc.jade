@@ -1,0 +1,28 @@
+extends layout
+include project_page_mixins
+
+block title
+  title TryBTC | Pat Briggs
+
+block content
+  .project_page.trybtc_page
+    +project_promo("TryBTC", "teaching the world about Bitcoin in under 5 minutes",
+      "600,000", "People taught about Bitcoin",
+      "176", "Countries that have used our site",
+      "100,000", "Bitcents donated to charity")
+
+    +project_info("TryBTC is a website with the goal of teaching anyone in the world, no matter their background, about Bitcoin and how they can use it. My roommate and I created it in early 2013 but it continues to teach people to this day.", "While my roommate and I did not have concrete roles, I generally focused more on the back-end and infrastructure while he focused mostly on the front-end. In addition to these focuses, we both spent a great deal of time user testing and negotiating referral deals with other Bitcoin companies.")
+
+    +project_images("Screenshots")
+      +full_width_project_image("trybtc_screenshot_1")(label_class="")
+        span Since the goal of TryBTC is to teach anyone in the world about Bitcoin, we use a big button with a clear action to make starting as easy as possible.
+
+      +left_half_project_image("trybtc_screenshot_2")(label_class="trybtc_screenshot_2_text")
+        span While we try to minimize the amount of text on the site, we found through user tests that it was important to explain the basic concept in order to make people feel more comfortable with it. They are, in fact, dealing with real money.
+
+      +side_by_side_project_images("trybtc_screenshot_3", "Our biggest principle: make things as simple as possible.", "trybtc_screenshot_4", "Our goal was to make creating a Bitcoin wallet as easy as clicking a button.")
+
+      +full_width_project_image("trybtc_screenshot_5")(label_class="")
+        span One of our toughest issues was making a very technical topic as friendly and approachable as possible. This is the primary reason for our bright color scheme and playful mascot.
+
+    .footer

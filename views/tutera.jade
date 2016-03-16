@@ -1,0 +1,32 @@
+extends layout
+include project_page_mixins
+
+block title
+  title Tutera | Pat Briggs
+
+block content
+  .project_page.tutera_page
+    +project_promo("Tutera", "connecting helpful tutors to hardworking students",
+      "3", "Rounds of user testing",
+      "8", "Weeks taken to create the project",
+      "1", "Best in studio award")
+
+    +project_info("Tutera is a mobile web-app created to help connect local tutors to hardworking students. It is a prototype created for the introductory human computer interaction class at Stanford.", "As a team of four, we performed the needfinding, user interviews, and sketching phases of the project together. Afterwards, I worked with one of the team members to create the web-app. She primarily focused on the front-end and design while I primarily worked on the back-end and the interaction between the front-end and back-end.")
+
+    +project_images("The Process")
+      +left_half_project_image("tutera_screenshot_1")(label_class="tutera_screenshot_1_text")
+        span Our design process began with user interviews. We knew we wanted to create something in the tutoring space, so we interviewed a diverse set of tutors, tutees, and parents of tutees to try and learn about their needs.
+
+      +right_half_project_image("tutera_screenshot_2")(label_class="tutera_screenshot_2_text")
+        span After analyzing the needs we encountered, we began brainstorming different solutions to the problem of connecting tutors with tutees. We picked our top idea, and created a concept video to further explore our potential solution.
+
+      +full_width_project_image("tutera_screenshot_3")(label_class="")
+        span Next, we began sketching different ideas for the scenarios of finding a tutor and registering as a tutor.
+
+      +left_half_project_image("tutera_screenshot_4")(label_class="tutera_screenshot_4_text")
+        span After receiving feedback on our sketches, we refined our design and created a medium-fidelity interactive prototype. You can find it #[a(href='https://marvelapp.com/79beie') here].
+
+      +right_half_project_image("tutera_screenshot_5")(label_class="tutera_screenshot_5_text")
+        span Many user tests and revisions later, we created our final designs and turned them into code, resulting in our final prototype as a web app. You can find it #[a(target='_blank', href='http://tutera.herokuapp.com/') here].
+
+    .footer

@@ -1,0 +1,135 @@
+extends layout
+
+block title
+  title Pat Briggs's Personal Site and Portfolio
+
+block content
+  //- Big promo picture and my name
+  .promo
+    .vertical_center
+      .about_me_headshot
+      .promo_name
+        span.extra_bold Pat
+        | Briggs
+      .promo_sub_text Full-stack developer
+      .promo_icons
+        a.promo_social_icon(href='https://www.linkedin.com/in/pkbriggs', target='_blank')
+          i.fa.fa-linkedin-square
+        a.promo_social_icon(href='mailto:patkbriggs@gmail.com', target='_blank')
+          i.fa.fa-envelope-o
+        a.promo_social_icon(href='https://github.com/pkbriggs', target='_blank')
+          i.fa.fa-github-square
+  a.promo_image_credit(href='https://pixabay.com/en/beach-volley-volleyball-401879/', target='_blank') image source
+
+  //- Section header for about and contact sections
+  .subsection_header_row
+    .container
+      .row
+        .col-md-6.subsection_header
+          span.subsection_header_text About
+        .col-md-5.col-md-offset-1.subsection_header
+          span.subsection_header_text Contact
+
+  //- Content for about and content sections
+  .container
+    .row
+      .col-md-6
+        p
+          | Hi, I'm Pat! I'm currently a senior studying computer science at Stanford University. I love the process of creation - from need-finding and sketching to prototyping and coding. I'm passionate about making things that people love to use.
+        p.small_margin_top
+          | On the weekends, you can find me on a sand volleyball court or in the gym doing squats. I could also be tinkering with new Javascript libraries or playing Super Smash Brothers.
+      .col-md-5.col-md-offset-1
+        a.block(href='https://www.linkedin.com/in/pkbriggs', target='_blank')
+          i.fa.fa-fw.fa-linkedin-square.contact_method_icon.black_text.blue_hover_highlight
+          span.contact_method_text.link_hover_underline.contact_method_link
+            | linkedin.com/in/pkbriggs
+        a.block(href='mailto:patkbriggs@gmail.com', target='_blank')
+          i.fa.fa-fw.fa-envelope-o.contact_method_icon.black_text.blue_hover_highlight
+          span.contact_method_text.link_hover_underline.contact_method_link patkbriggs@gmail.com
+        a.block(href='https://github.com/pkbriggs', target='_blank')
+          i.fa.fa-fw.fa-github-square.contact_method_icon.black_text.blue_hover_highlight
+          span.contact_method_text.link_hover_underline.contact_method_link pkbriggs
+
+  //- Section header for projects
+  .subsection_header_row
+    .container
+      .row
+        .col-md-12.subsection_header
+          span.subsection_header_text Projects
+
+  //- Projects - NoteMap
+  .container.project_container
+    .row
+      .col-md-5
+        //- Project name and information
+        .project_header
+          a.project_name.blue_hover_highlight(href='notemap.html') NoteMap
+          span.project_timeframe (April 2015 - present)
+        .project_description
+          | NoteMap is a platform designed to allow programmers to better annotate and take notes on code. What began as a Stanford senior project assignment later went on to win an award at the Stanford senior project fair, and we are continuing to develop our product in hopes that students can begin to use it in their classes.
+        div
+          span.project_technology Ruby on Rails
+          i.fa.fa-circle.project_technology_separator
+          span.project_technology Coffeescript
+          i.fa.fa-circle.project_technology_separator
+          span.project_technology JQuery
+          i.fa.fa-circle.project_technology_separator
+          span.project_technology Postgres
+        a.project_learn_more.link_hover_underline(href='notemap.html')
+          | Learn more
+          i.fa.fa-angle-right
+      .col-md-6.col-md-offset-1
+        a.notemap_computer_image.full_responsive_image.project_image(href='notemap.html')
+
+  //- Projects - Tutera
+  .container.project_container
+    .row
+      .col-md-6
+        a.tutera_phone_image.full_responsive_image.project_image(href='tutera.html')
+      .col-md-5.tutera_project_info_container
+        //- Project name and information
+        .project_header
+          a.project_name.blue_hover_highlight(href='tutera.html') Tutera
+          span.project_timeframe (September 2014 - December 2014)
+        .project_description
+          | Tutera is a mobile web-app created to solve the problem of connecting helpful tutors to hardworking students. The site was originally created for the class Human Computer Interaction and Design at Stanford, thus the focus of the project was on the process of needfinding, sketching, user testing, prototyping, and developing a final product.
+        div
+          span.project_technology Ruby on Rails
+          i.fa.fa-circle.project_technology_separator
+          span.project_technology Javascript
+          i.fa.fa-circle.project_technology_separator
+          span.project_technology Postgres
+          i.fa.fa-circle.project_technology_separator
+          span.project_technology Heroku
+        a.project_learn_more.link_hover_underline(href='tutera.html')
+          | Learn more
+          i.fa.fa-angle-right
+
+  //- Projects - TryBTC
+  .container.project_container.no_border_bottom
+    .row.tiny_margin_top
+      .col-md-5
+        //- Project name and information
+        .project_header
+          a.project_name.blue_hover_highlight(href='trybtc.html') TryBTC
+          span.project_timeframe (April 2013 - September 2014)
+        .project_description
+          | TryBTC is a website with the goal of teaching anyone in the world, no matter their background, about Bitcoin in under 5 minutes. My roommate and I started TryBTC as a class project, but we continued to work on it and proceeded to launch it publicly and raise venture capital. TryBTC has since helped over 500,000 people learn about and use Bitcoin.
+        div
+          span.project_technology Ruby on Rails
+          i.fa.fa-circle.project_technology_separator
+          span.project_technology Coffeescript
+          i.fa.fa-circle.project_technology_separator
+          span.project_technology JQuery
+          i.fa.fa-circle.project_technology_separator
+          span.project_technology MySQL
+          i.fa.fa-circle.project_technology_separator
+          span.project_technology AWS
+        a.project_learn_more.link_hover_underline(href='trybtc.html')
+          | Learn more
+          i.fa.fa-angle-right
+      .col-md-6.col-md-offset-1
+        a.trybtc_laptop_image.full_responsive_image.project_image(href='trybtc.html')
+  //- Empty footer, currently only used to add some padding to the bottom
+  .footer
+
