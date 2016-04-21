@@ -270,6 +270,9 @@ a:hover {
   margin-left: 5px;
   color: #717171;
 }
+.project_timeframe.abbreviated_date {
+  display: none;
+}
 
 .project_learn_more_container {
   display: flex;
@@ -1005,6 +1008,13 @@ a:hover {
     .subsection_header, .subsection_content {
       max-width: none;
     }
+  }
+
+  .full_date {
+    display: none;
+  }
+  .abbreviated_date {
+    display: inline !important;
   }
 }
 
