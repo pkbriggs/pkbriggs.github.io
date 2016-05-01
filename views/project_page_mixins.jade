@@ -18,17 +18,30 @@ mixin project_promo(name, tagline, num1, num1_label, num2, num2_label, num3, num
             .project_highlight_text= num3_label
 
 mixin project_info(what_is_it, my_role)
-  .subsection_header_row
-    .container
-      .row
-        .col-md-5.subsection_header
-          span.subsection_header_text What is it?
-        .col-md-6.col-md-offset-1.subsection_header
-          span.subsection_header_text My role
-  .container
-    .row
-      .col-md-5= what_is_it
-      .col-md-6.col-md-offset-1= my_role
+  .side_by_side_container
+    .subsection_header.side_by_side_left_header
+      span.subsection_header_text What is it?
+    .subsection_header_divider.side_by_side_left_header_divider
+    .subsection_content.side_by_side_left_content
+      p= what_is_it
+
+    .subsection_header.side_by_side_right_header
+      span.subsection_header_text My role
+    .subsection_header_divider.side_by_side_right_header_divider
+    .subsection_content.side_by_side_right_content
+      p= my_role
+
+  //- .subsection_header_row
+  //-   .container
+  //-     .row
+  //-       .col-md-5.subsection_header
+  //-         span.subsection_header_text What is it?
+  //-       .col-md-6.col-md-offset-1.subsection_header
+  //-         span.subsection_header_text My role
+  //- .container
+  //-   .row
+  //-     .col-md-5= what_is_it
+  //-     .col-md-6.col-md-offset-1= my_role
 
 mixin project_images(section_name)
   .subsection_header_row

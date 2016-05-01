@@ -856,6 +856,7 @@ a:hover {
     span {
       display: flex;
       width: 80%;
+      margin-top: 10px;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
@@ -931,38 +932,42 @@ a:hover {
   }
 
   .subsection_header, .subsection_content {
+    max-width: 450px; // two 450px sections, plus 100px margin separation = 1000px
+  }
+
+  .side_by_side_large {
     max-width: 675px;
   }
 
-  .contact_content, .contact_header {
+  .side_by_side_small {
     max-width: 325px;
   }
 
-  .about_header, .about_content {
-    padding-right: 100px;
+  .side_by_side_left_header, .side_by_side_left_content {
+    margin-right: 100px;
   }
 
-  .about_header {
+  .side_by_side_left_header {
     order: 1
   }
 
-  .contact_header {
+  .side_by_side_right_header {
     order: 2;
   }
 
-  .about_header_divider {
+  .side_by_side_left_header_divider {
     order: 3;
   }
 
-  .contact_header_divider {
+  .side_by_side_right_header_divider {
     order: 4;
   }
 
-  .about_content {
+  .side_by_side_left_content {
     order: 5;
   }
 
-  .contact_content {
+  .side_by_side_right_content {
     order: 6;
   }
 }
@@ -971,37 +976,41 @@ a:hover {
 // responsive code for homepage
 
 @media screen and (max-width: 1050px) {
-  .subsection_header, .subsection_content, .project_content_and_image_container, .side_by_side_container .about_content {
+  .subsection_header, .subsection_content, .project_content_and_image_container, .side_by_side_container .side_by_side_left_content {
     padding-right: 8%;
     padding-left: 8%;
   }
 
   .side_by_side_container {
-    .about_header, .about_header_divider, .about_content, .contact_header, .contact_header_divider, .contact_content {
+    .side_by_side_left_header, .side_by_side_left_header_divider, .side_by_side_left_content, .side_by_side_right_header, .side_by_side_right_header_divider, .side_by_side_right_content {
       flex: 1 0 100%;
     }
 
-    .about_header {
+    .side_by_side_left_content, .side_by_side_left_header {
+      margin-right: 0px;
+    }
+
+    .side_by_side_left_header {
       order: 1
     }
 
-    .about_header_divider {
+    .side_by_side_left_header_divider {
       order: 2;
     }
 
-    .about_content {
+    .side_by_side_left_content {
       order: 3;
     }
 
-    .contact_header {
+    .side_by_side_right_header {
       order: 4;
     }
 
-    .contact_header_divider {
+    .side_by_side_right_header_divider {
       order: 5;
     }
 
-    .contact_content {
+    .side_by_side_right_content {
       order: 6;
     }
 
@@ -1015,6 +1024,16 @@ a:hover {
   }
   .abbreviated_date {
     display: inline !important;
+  }
+}
+
+@media screen and (max-width: 995px) { // not sure why this is 995px. seems to do with flexbox/image library
+  .image_and_label_container.side_by_side_left {
+    padding-right: 0px;
+  }
+
+  .image_and_label_container.side_by_side_container {
+    flex-direction: column;
   }
 }
 
