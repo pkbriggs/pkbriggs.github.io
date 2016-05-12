@@ -880,7 +880,7 @@ a:hover {
     flex: 1 0 100%;
   }
 
-  .projects_subsection_header_divier {
+  .projects_subsection_header_divider {
     margin-bottom: 3.5%;
   }
 
@@ -972,6 +972,16 @@ a:hover {
   }
 }
 
+.project_images {
+  .subsection_content, .subsection_header {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
 
 // responsive code for homepage
 
@@ -1028,12 +1038,49 @@ a:hover {
 }
 
 @media screen and (max-width: 995px) { // not sure why this is 995px. seems to do with flexbox/image library
+  .project_page {
+    .container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  .highlights_outer_container {
+    display: none;
+  }
+
   .image_and_label_container.side_by_side_left {
     padding-right: 0px;
   }
 
-  .image_and_label_container.side_by_side_container {
+  .image_and_label_container {
     flex-direction: column;
+  }
+
+  .image_and_label_container.left_half, .image_and_label_container.left_half {
+    .focusable_image_container {
+      padding-right: 0px;
+    }
+  }
+
+  .image_and_label_container.side_by_side {
+    .image_label {
+      margin-top: 0px;
+    }
+  }
+
+  .project_images {
+    .image_label {
+      margin-top: 20px;
+      margin-bottom: 7%;
+      justify-content: center;
+
+
+      span {
+        width: 80%;
+        text-align: center;
+      }
+    }
   }
 }
 

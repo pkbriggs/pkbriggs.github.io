@@ -44,13 +44,19 @@ mixin project_info(what_is_it, my_role)
   //-     .col-md-6.col-md-offset-1= my_role
 
 mixin project_images(section_name)
-  .subsection_header_row
-    .container
-      .row
-        .col-md-12.subsection_header
-          span.subsection_header_text= section_name
-  .container.small_margin_top
-    block
+  //- .subsection_header_row
+  //-   .container
+  //-     .row
+  //-       .col-md-12.subsection_header
+  //-         span.subsection_header_text= section_name
+  .project_images
+    .subsection_header
+      span.subsection_header_text= section_name
+    .subsection_header_divider
+
+    //- .container.small_margin_top
+    .subsection_content
+      block
 
 mixin full_width_project_image(image_path)
   //- the label is passed in as a block
